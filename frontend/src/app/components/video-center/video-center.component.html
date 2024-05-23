@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-sm-3">
+    <app-video-list
+      [videos]="videos"
+      (emitVideoDetails)="video = $event"
+    ></app-video-list>
+  </div>
+  <div class="col-sm-9">
+    <app-video-detail
+      *ngIf="video"
+      [video]="video"
+      (updateEvent)="onUpdate($event)"
+      (deleteEvent)="onDelete($event)"
+    ></app-video-detail>
+  </div>
+</div>

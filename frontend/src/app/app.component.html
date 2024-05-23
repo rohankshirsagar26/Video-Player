@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-sm bg-dark">
+  <div class="navbar-header">
+    <a class="navbar-brand" href="#">Video Player</a>
+  </div>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/create" routerLinkActive="active"
+        >Create</a
+      >
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/videos" routerLinkActive="active"
+        >Playlist</a
+      >
+    </li>
+  </ul>
+</nav>
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
